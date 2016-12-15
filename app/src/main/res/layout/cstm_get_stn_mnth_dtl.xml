@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableLayout
+        android:id="@+id/tblLyout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolBar_getStn_dtl"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="15dp">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+
+            android:background="#1b8035" />
+
+        <TableRow
+            android:id="@+id/tblRw1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="3.79">
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="70dp"
+                android:background="#1b8035" />
+
+            <!--   <TableRow
+                   android:id="@+id/tblRw2"
+                   android:layout_width="0dp"
+                   android:layout_height="match_parent"
+                   android:layout_weight="0.48"
+                   android:gravity="center">
+
+
+                   <TextView
+
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="No."
+                       android:textColor="#1b8035"
+                       android:textSize="15sp" />
+               </TableRow>-->
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="70dp"
+                android:background="#1b8035" />
+
+            <TableRow
+                android:id="@+id/tblRw3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.8"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/txtVw_mnth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Months"
+                    android:textColor="#1b8035"
+                    android:textSize="15sp" />
+            </TableRow>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="70dp"
+                android:background="#1b8035" />
+
+            <TableRow
+                android:id="@+id/tblRw4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.98"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/txtVw_prchse"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Total Month Purchase"
+                    android:textColor="#1b8035"
+                    android:textSize="15sp" />
+            </TableRow>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="70dp"
+                android:visibility="visible"
+                android:background="#1b8035" />
+
+            <!-- <TableRow
+                 android:id="@+id/tblRw5"
+                 android:layout_width="0dp"
+                 android:layout_height="match_parent"
+                 android:layout_weight="1.3"
+                 android:visibility="visible"
+                 android:gravity="center">
+
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="match_parent"
+                     android:gravity="center"
+                     android:text="Receipt"
+                     android:textColor="#1b8035"
+                     android:textSize="15sp" />
+             </TableRow>
+
+             <View
+                 android:layout_width="1dp"
+                 android:layout_height="70dp"
+                 android:background="#1b8035" />-->
+        </TableRow>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+
+            android:background="#1b8035" />
+
+    </TableLayout>
+
+</RelativeLayout>

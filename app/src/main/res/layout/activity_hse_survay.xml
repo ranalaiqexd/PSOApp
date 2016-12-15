@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolBar_rtlOut_inspctn"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#0D8241"
+        android:gravity="center"
+        android:minHeight="?attr/actionBarSize"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <TextView
+            android:id="@+id/haiderTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Retail Outlet Inspection "
+            android:textColor="#ffffff"
+            android:textSize="@dimen/header_txt_size" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/llout"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/toolBar_rtlOut_inspctn"
+        android:background="#005E20"
+        android:orientation="horizontal">
+
+        <TextView
+
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:gravity="center"
+            android:text="HSE Standards"
+            android:textColor="#ffffff"
+            android:textSize="15sp" />
+
+        <TextView
+
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:text="Yes / No"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        android:layout_margin="3dp"
+        android:layout_above="@+id/btnBtm"
+        android:layout_below="@+id/llout"
+        tools:listitem="@layout/list_item_survay" />
+
+    <LinearLayout
+        android:id="@+id/btnBtm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/btnSbmtHse"
+            android:layout_width="105dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/layout_backgrnd_bluedark"
+            android:text="Submit"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+
+</RelativeLayout>

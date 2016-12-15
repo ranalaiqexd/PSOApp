@@ -1,0 +1,594 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolBar_rtlOut_inspctn_forDtl"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#0D8241"
+        android:gravity="center"
+        android:minHeight="?attr/actionBarSize"
+
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <TextView
+            android:id="@+id/haiderTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Retail Outlet Inspection "
+            android:textColor="#ffffff"
+            android:textSize="@dimen/header_txt_size" />
+
+    </android.support.v7.widget.Toolbar>
+    <LinearLayout
+        android:id="@+id/llout"
+        android:layout_below="@+id/toolBar_rtlOut_inspctn_forDtl"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#005E20"
+        android:orientation="horizontal">
+
+        <TextView
+
+            android:layout_width="0dp"
+            android:layout_weight="1.5"
+            android:layout_height="match_parent"
+            android:gravity="center"
+
+            android:text="FORECOURT AREA &amp; CUSTOMER SERVICES"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+        <TextView
+
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Yes / No"
+            android:textColor="#ffffff"
+            android:textSize="13sp" />
+    </LinearLayout>
+    <ScrollView
+        android:layout_below="@+id/llout"
+        android:layout_width="match_parent"
+        android:fillViewport="true"
+        android:layout_above="@+id/btnBtm"
+        android:layout_height="match_parent">
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:background="#F1EFF0"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:padding="5dp"
+                    android:text="Forecourt area is clean in all aspects."
+                    android:layout_weight="0.7"/>
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:background="#b4b4b4"></View>
+                <TextView
+                    android:id="@+id/spnnrFor1"
+
+                    android:layout_width="0dp"
+                    android:gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="5dp"
+                    android:text="N/A"
+                    android:background="@drawable/edt_txt_bluebackgrnd"
+                    android:layout_weight="0.3"></TextView>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:background="#ffffff"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:padding="5dp"
+                    android:text="All the dispensers are functioning properly."
+                    android:layout_weight="0.7"/>
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:background="#b4b4b4"></View>
+                <TextView
+                    android:id="@+id/spnnrFor2"
+                    android:text="N/A"
+                    android:layout_width="0dp"
+                    android:gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edt_txt_bluebackgrnd"
+                    android:layout_weight="0.3"></TextView>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:background="#F1EFF0"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:padding="5dp"
+                    android:text="All signage and lighting are in proper order."
+                    android:layout_weight="0.7"/>
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:background="#b4b4b4"></View>
+                <TextView
+                    android:id="@+id/spnnrFor3"
+                    android:text="N/A"
+                    android:layout_width="0dp"
+                    android:gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edt_txt_bluebackgrnd"
+                    android:layout_weight="0.3"></TextView>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:background="#ffffff"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:padding="5dp"
+                    android:text="Lubricants are available and properly displayed on clean lubricant racks."
+                    android:layout_weight="0.7"/>
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:background="#b4b4b4"></View>
+                <TextView
+                    android:id="@+id/spnnrFor4"
+                    android:text="N/A"
+                    android:layout_width="0dp"
+                    android:gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edt_txt_bluebackgrnd"
+                    android:layout_weight="0.3"></TextView>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:background="#F1EFF0"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:padding="5dp"
+                    android:text="Meter reading is shown to the customers before and after fuel dispensing."
+                    android:layout_weight="0.7"/>
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:background="#b4b4b4"></View>
+                <TextView
+                    android:id="@+id/spnnrFor5"
+                    android:text="N/A"
+                    android:layout_width="0dp"
+                    android:gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edt_txt_bluebackgrnd"
+                    android:layout_weight="0.3"></TextView>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:background="#ffffff"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:padding="5dp"
+                    android:text="Wind screen cleaning service is provided to the customers at all times."
+                    android:layout_weight="0.7"/>
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:background="#b4b4b4"></View>
+                <TextView
+                    android:id="@+id/spnnrFor6"
+                    android:text="N/A"
+                    android:layout_width="0dp"
+                    android:gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edt_txt_bluebackgrnd"
+                    android:layout_weight="0.3"></TextView>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:background="#F1EFF0"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:padding="5dp"
+
+                    android:text="Quick oil change is operative."
+                    android:layout_weight="0.7"/>
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:background="#b4b4b4"></View>
+                <TextView
+                    android:id="@+id/spnnrFor7"
+                    android:text="N/A"
+                    android:layout_width="0dp"
+                    android:gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edt_txt_bluebackgrnd"
+                    android:layout_weight="0.3"></TextView>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:background="#ffffff"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:padding="5dp"
+                    android:text="Only PSO lubricant is sold and changed at the station."
+                    android:layout_weight="0.7"/>
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:background="#b4b4b4"></View>
+                <TextView
+                    android:id="@+id/spnnrFor8"
+                    android:text="N/A"
+                    android:layout_width="0dp"
+                    android:gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edt_txt_bluebackgrnd"
+                    android:layout_weight="0.3"></TextView>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:background="#F1EFF0"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:padding="5dp"
+                    android:text="All the fuel prices on the dispensers and price signage on monolith are updated and clearly visible to the customers."
+                    android:layout_weight="0.7"/>
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:background="#b4b4b4"></View>
+                <TextView
+                    android:id="@+id/spnnrFor9"
+                    android:layout_width="0dp"
+                    android:text="N/A"
+                    android:gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edt_txt_bluebackgrnd"
+                    android:layout_weight="0.3"></TextView>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:background="#ffffff"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:padding="5dp"
+                    android:text="Dust bins are available and in proper condition."
+                    android:layout_weight="0.7"/>
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:background="#b4b4b4"></View>
+                <TextView
+                    android:id="@+id/spnnrFor10"
+                    android:layout_width="0dp"
+                    android:gravity="center"
+                    android:text="N/A"
+                    android:layout_marginLeft="5dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edt_txt_bluebackgrnd"
+                    android:layout_weight="0.3"></TextView>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:background="#F1EFF0"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:padding="5dp"
+                    android:text="All the attendants and staff members are in clean and proper uniform."
+                    android:layout_weight="0.7"/>
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:background="#b4b4b4"></View>
+                <TextView
+                    android:id="@+id/spnnrFor11"
+                    android:layout_width="0dp"
+                    android:text="N/A"
+                    android:gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edt_txt_bluebackgrnd"
+                    android:layout_weight="0.3"></TextView>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:background="#ffffff"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:padding="5dp"
+                    android:text="Solgan wall is in presentable condition."
+                    android:layout_weight="0.7"/>
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:background="#b4b4b4"></View>
+                <TextView
+                    android:id="@+id/spnnrFor12"
+                    android:text="N/A"
+                    android:layout_width="0dp"
+                    android:gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edt_txt_bluebackgrnd"
+                    android:layout_weight="0.3"></TextView>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:background="#F1EFF0"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:padding="5dp"
+                    android:text="Clean drinking water is avaialble at the outlet."
+                    android:layout_weight="0.7"/>
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:background="#b4b4b4"></View>
+                <TextView
+                    android:id="@+id/spnnrFor13"
+                    android:text="N/A"
+                    android:layout_width="0dp"
+                    android:gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edt_txt_bluebackgrnd"
+                    android:layout_weight="0.3"></TextView>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:background="#ffffff"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:padding="5dp"
+                    android:text="Copy of explosive license or valid copy of paid challan is available and displayed in the sales rooms."
+                    android:layout_weight="0.7"/>
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:background="#b4b4b4"></View>
+                <TextView
+                    android:id="@+id/spnnrFor14"
+                    android:text="N/A"
+                    android:layout_width="0dp"
+                    android:gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edt_txt_bluebackgrnd"
+                    android:layout_weight="0.3"></TextView>
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#b4b4b4"></View>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="10dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="8dp"
+
+                    android:gravity="start|center"
+                    android:padding="4dp"
+
+                    android:text="Comments"
+                    android:textSize="@dimen/activity_horizontal_margin" />
+                <!-- <EditText
+                     android:layout_width="0dp"
+                     android:layout_height="40dp"
+                     android:layout_marginRight="10dp"
+                     android:background="@drawable/edt_bck_gnd_green"
+                     android:layout_weight="0.7"/>-->
+                <TextView
+                    android:id="@+id/edtForCmnts"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:background="@drawable/edt_bck_gnd_green"
+                    android:ems="10"
+                    android:gravity="left|top"
+                    android:inputType="textMultiLine"
+
+
+                    android:padding="5dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:id="@+id/btnBtm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="5dp"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+
+        <Button
+            android:id="@+id/btnForSbmt"
+            android:layout_width="105dp"
+            android:layout_height="wrap_content"
+
+
+            android:background="@drawable/layout_backgrnd_bluedark"
+            android:text="Submit"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+
+
+
+</RelativeLayout>

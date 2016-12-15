@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.inspections.pso">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-feature android:name="android.hardware.camera"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/abc_fuel_logo"
+        android:label="@string/app_name"
+        android:name=".MyApplication"
+        android:supportsRtl="true"
+        android:theme="@style/MyMaterialTheme">
+        <activity android:name=".view.SplashActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".view.LoginActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".view.SapSalesActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".view.SapSalesDetailActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".view.DashBoardActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".view.SynchronizeActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".view.MyInspectionActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".view.MyInspectionDetailActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".view.ViewHSESurvayActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".view.ViewFORCOURTSurvayActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".view.ViewTankActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".view.ViewNozzlesActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".view.NewInspectionActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|stateVisible"/>
+        <activity android:name=".view.HSESurvayActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".view.FORCOURTSurvayActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".view.AddTankerActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".view.AddNozzlesActivity"
+            android:screenOrientation="portrait"></activity>
+
+
+        <service android:name=".utils.LogoutService"/>
+    </application>
+
+</manifest>

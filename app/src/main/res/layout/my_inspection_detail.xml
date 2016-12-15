@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolBar_myInspctn"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="#0D8241"
+        android:gravity="center"
+        android:minHeight="?attr/actionBarSize"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <TextView
+            android:id="@+id/haiderTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="My Inspection"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/header_txt_size" />
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/toolBar_myInspctn"
+        android:fillViewport="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="8dp"
+                    android:layout_weight="0.47"
+                    android:gravity="start|center"
+                    android:padding="4dp"
+                    android:text="Fuel Station"
+                    android:textSize="@dimen/activity_horizontal_margin" />
+                <TextView
+                    android:id="@+id/tv_station"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="0.65"
+                    android:background="@drawable/edt_bck_gnd_green"
+                    android:gravity="center"
+                    android:padding="2dp"
+                    android:text="GPS coordinates did not match with your current location"
+                    android:textColor="#2091FF"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+                    android:visibility="visible" />
+                <Spinner
+                    android:id="@+id/spnrFul_stn"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:visibility="gone"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="0.65"
+                    android:background="@drawable/edt_bck_gnd_green" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="8dp"
+                    android:layout_weight="0.47"
+                    android:gravity="center_vertical"
+                    android:padding="4dp"
+                    android:text="Retail Outlet Code"
+                    android:textSize="@dimen/activity_horizontal_margin" />
+                <TextView
+                    android:id="@+id/tv_sap_code"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="0.65"
+                    android:background="@drawable/edt_bck_gnd_green"
+                    android:gravity="center"
+                    android:paddingLeft="5dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:visibility="gone">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="8dp"
+                    android:layout_weight="0.47"
+                    android:gravity="center_vertical"
+                    android:padding="4dp"
+                    android:text="Location Auto Detect"
+                    android:textSize="15sp" />
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="0.65"
+                    android:background="@drawable/edt_bck_gnd_green"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingLeft="6dp">
+                    <TextView
+                        android:id="@+id/txtdtctd_loctn"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="0.6"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:paddingLeft="5dp"
+                        android:text="0.0" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="8dp"
+                    android:gravity="center_vertical"
+                    android:padding="4dp"
+                    android:text="Date"
+                    android:textSize="@dimen/activity_horizontal_margin" />
+
+                <View
+                    android:layout_width="40dp"
+                    android:layout_height="1dp"></View>
+
+                <TextView
+                    android:id="@+id/tv_date"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="auto date "
+                    android:textColor="#2091FF"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="1dp"></View>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="4dp"
+                    android:gravity="center_vertical"
+                    android:padding="4dp"
+                    android:text="Time"
+                    android:textSize="@dimen/activity_horizontal_margin" />
+
+                <TextView
+                    android:id="@+id/tv_time"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="auto time"
+                    android:textColor="#2091FF"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="8dp"
+                    android:layout_weight="0.47"
+                    android:gravity="center_vertical"
+                    android:padding="4dp"
+                    android:text="Tank &amp; Nozzle Reading"
+                    android:textSize="@dimen/activity_horizontal_margin" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="0.65"
+                    android:background="@drawable/edt_bck_gnd_green"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingLeft="6dp">
+                    <TextView
+                        android:id="@+id/edtTnkRdng"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="0.6"
+                        android:background="@null"
+                        android:text="Completed"
+                        android:gravity="center"
+                        android:paddingLeft="5dp"
+                        android:textColor="#2091FF" />
+                    <Button
+                        android:id="@+id/btnTnkRdg"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginRight="5dp"
+                        android:background="@mipmap/shape" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="8dp"
+                    android:layout_weight="0.47"
+                    android:gravity="center_vertical"
+                    android:padding="4dp"
+                    android:text="Survey Rating"
+                    android:textSize="@dimen/activity_horizontal_margin" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="0.65"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btnHSE"
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:background="@mipmap/show_hse_survey"
+                        android:padding="2dp"
+                        android:textAllCaps="false"
+                        android:textSize="@dimen/contct_txt_size" />
+
+                    <View
+                        android:layout_width="5dp"
+                        android:layout_height="1dp"></View>
+
+                    <Button
+                        android:id="@+id/btnFORE"
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:background="@mipmap/show_for_crt"
+                        android:padding="2dp"
+                        android:textAllCaps="false"
+                        android:textSize="@dimen/contct_txt_size" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="12dp"
+                    android:layout_weight="0.47"
+                    android:gravity="center_vertical"
+                    android:text="HSE Standard Rating"
+                    android:textSize="@dimen/activity_horizontal_margin" />
+                <TextView
+                    android:id="@+id/txthseRtng"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="0.6"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:paddingLeft="5dp"
+                    android:text="Status"
+                    android:textSize="@dimen/create_nw_accnt" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="12dp"
+                    android:layout_weight="0.47"
+                    android:gravity="center_vertical"
+                    android:text="FORECOURT Rating"
+                    android:textSize="@dimen/activity_horizontal_margin" />
+                <TextView
+                    android:id="@+id/txtForCOrtRtng"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="0.6"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:paddingLeft="5dp"
+                    android:text="Status"
+                    android:textSize="@dimen/create_nw_accnt" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="8dp"
+                    android:layout_weight="0.47"
+                    android:gravity="start|center"
+                    android:padding="4dp"
+                    android:text="Purpose"
+                    android:textSize="@dimen/activity_horizontal_margin" />
+                <TextView
+                    android:id="@+id/tv_purpose"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="0.65"
+                    android:background="@drawable/edt_bck_gnd_green"
+                    android:padding="10dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="8dp"
+                    android:layout_weight="0.47"
+                    android:gravity="start|center"
+                    android:padding="4dp"
+                    android:text="Comments"
+                    android:textSize="@dimen/activity_horizontal_margin" />
+                <TextView
+                    android:id="@+id/tv_comment"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="0.65"
+                    android:background="@drawable/edt_bck_gnd_green"
+                    android:ems="10"
+                    android:gravity="left|top"
+                    android:inputType="textMultiLine"
+                    android:maxLength="2000"
+                    android:padding="10dp"/>
+
+            </LinearLayout>
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:visibility="visible"
+                android:scrollbars="vertical"
+                android:layout_marginTop="5dp"
+                tools:listitem="@layout/list_item_inspection_images" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_view_calculation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="vertical"
+                android:layout_margin="5dp"
+                android:padding="0.5dp"
+                android:background="@color/colorPrimary"
+                tools:listitem="@layout/list_item_calculation" />
+
+            <TextView
+                android:id="@+id/tv_all_values_tag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_margin="5dp"
+                android:text="All Values in Liters"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+
+</RelativeLayout>

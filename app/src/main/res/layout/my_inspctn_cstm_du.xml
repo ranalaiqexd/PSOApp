@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/cstmLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="#2091FF"></View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="7dp">
+
+            <TextView
+                android:id="@+id/txtTnkDu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DU 1"
+                android:textColor="#2091FF"
+                android:textSize="@dimen/create_nw_accnt"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.10"></View>
+
+            <TextView
+                android:id="@+id/spnrDu"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="0.5"
+                android:background="@drawable/edt_txt_bluebackgrnd"
+                android:entries="@array/nav_drawer_labels"
+                android:gravity="center"
+                android:textSize="17sp"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="7dp"
+                android:text="Product"
+
+                android:textColor="#2091FF" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+
+            android:background="#2091FF"></View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="7dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Previous"
+                    android:textSize="13sp" />
+
+                <View
+                    android:layout_width="60dp"
+                    android:layout_height="1dp"></View>
+
+                <LinearLayout
+                    android:layout_width="75dp"
+                    android:layout_height="35dp"
+                    android:background="@drawable/edt_bck_gnd_green"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="4dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ex:"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/prvcsEdtDU"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="4dp"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:paddingLeft="2dp"
+
+                        android:textSize="11sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lloutPrvDu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="18dp"
+                    android:gravity="center_vertical"
+
+
+                    android:orientation="horizontal">
+                    <!--<TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="13sp"
+                        android:text="ex:" />
+                    <EditText
+                        android:id="@+id/prvcssEdtDU1"
+                        android:layout_marginLeft="4dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:inputType="number"
+                        android:background="@null"
+                        android:paddingLeft="2dp"
+                        android:textSize="11sp"
+                        />-->
+                    <CheckBox
+                        android:id="@+id/chkDu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:clickable="false"
+                        android:layout_marginLeft="12dp" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="Defected / Not Selected"
+                    android:textColor="#2091FF" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="7dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Current"
+                    android:textSize="13sp" />
+
+                <View
+                    android:layout_width="67dp"
+                    android:layout_height="1dp"></View>
+
+                <LinearLayout
+                    android:layout_width="75dp"
+                    android:layout_height="35dp"
+                    android:background="@drawable/edt_bck_gnd_green"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="4dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ex:"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/crrntt_EdtDu"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="4dp"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:paddingLeft="2dp"
+                        android:textSize="11sp" />
+                </LinearLayout>
+                <!--<LinearLayout
+                    android:id="@+id/llayoutcrntDu"
+                    android:layout_width="75dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="19dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="4dp"
+                    android:visibility="gone"
+                    android:background="@drawable/edt_bck_gnd_green"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="13sp"
+                        android:text="ex:" />
+                    <EditText
+                        android:id="@+id/crrnt_EdtDu1"
+                        android:layout_marginLeft="4dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:inputType="number"
+                        android:background="@null"
+                        android:paddingLeft="2dp"
+                        android:textSize="11sp"
+                        />
+                </LinearLayout>
+                <CheckBox
+                    android:id="@+id/chkDu"
+                    android:layout_marginLeft="12dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />-->
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/lllOpening"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="7dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="visible"
+                android:paddingLeft="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Opening Balanace"
+                    android:textSize="13sp" />
+
+                <View
+                    android:layout_width="8dp"
+                    android:layout_height="1dp"></View>
+
+                <LinearLayout
+                    android:layout_width="75dp"
+                    android:layout_height="35dp"
+                    android:background="@drawable/edt_bck_gnd_green"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="4dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ex:"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/Text_Opning_balnc"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="4dp"
+                        android:gravity="center"
+                        android:background="@null"
+
+                        android:paddingLeft="2dp"
+                        android:paddingRight="1dp"
+                        android:textSize="11sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:id="@+id/lll_DuMax"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:text="Nozzles Maximum "/>
+                    <TextView
+                        android:id="@+id/txt_du_maxMy"
+                        android:layout_width="108dp"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="10dp"
+                        android:inputType="number"
+
+                        android:textSize="11sp"
+
+                        android:padding="5dp"
+                        android:background="@drawable/edt_bck_gnd_green"/>
+
+
+                </LinearLayout>
+            </LinearLayout>
+                <!--   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       android:layout_marginLeft="10dp"
+                       android:layout_marginRight="10dp"
+                       android:layout_marginTop="8dp"
+                       android:gravity="center_vertical"
+                       android:orientation="vertical">
+
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:text="DU Quantity Accuracy "
+                           android:textColor="#2091FF" />
+
+                       <TextView
+                           android:id="@+id/TxtForCmnts"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_marginRight="4dp"
+                           android:layout_marginTop="8dp"
+                           android:layout_weight="0.65"
+                           android:background="@drawable/edt_bck_gnd_green"
+                           android:ems="10"
+                           android:padding="5dp" />
+                   </LinearLayout>-->
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="#2091FF"></View>
+    </LinearLayout>
+
+
+</RelativeLayout>

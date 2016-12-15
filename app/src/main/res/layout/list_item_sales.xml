@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_out"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal"
+        android:weightSum="7"
+        android:id="@+id/ll_out"
+        android:background="#1b8035"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="40dp">
+
+        <TextView
+            android:id="@+id/tv_no"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="No."
+            android:background="@color/white"
+            android:textSize="13sp"/>
+        <TextView
+            android:id="@+id/tv_month"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:layout_marginLeft="1dp"
+            android:background="@color/white"
+            android:text="Month"
+            android:textColor="#1b8035"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tv_purchases"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:background="@color/white"
+            android:gravity="center"
+            android:text="Purchases"
+            android:layout_marginLeft="1dp"
+            android:textColor="#1b8035"
+            android:textSize="13sp" />
+
+
+    </LinearLayout>
+</RelativeLayout>

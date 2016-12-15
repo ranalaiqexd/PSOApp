@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolBar_tankRdingdu_dtl"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="#0D8241"
+        android:gravity="center"
+        android:minHeight="?attr/actionBarSize"
+
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <TextView
+            android:id="@+id/haiderTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Nozzles Reading"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/header_txt_size" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:id="@+id/scrllBr"
+        android:layout_above="@+id/btnLayoutDu"
+        android:layout_below="@+id/toolBar_tankRdingdu_dtl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:id="@+id/llayoutDu"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/llayoutCmntdu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:visibility="gone"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/edtTnkCmmnt"
+                    android:layout_width="0dp"
+                    android:layout_height="80dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_weight="0.65"
+                    android:background="@drawable/edt_bck_gnd_green"
+                    android:ems="10"
+                    android:gravity="left|top"
+                    android:inputType="textMultiLine"
+                    android:hint="Enter Comment"
+                    android:lines="8"
+
+                    android:padding="5dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+    <LinearLayout
+        android:id="@+id/btnLayoutDu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"
+        android:gravity="center"
+        android:padding="8dp"
+        android:orientation="horizontal">
+        <!--  <CheckBox
+              android:id="@+id/chkBxFlushDu"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content" />-->
+        <!--<TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#2091FF"
+            android:textSize="16sp"
+            android:text="Flush"/>-->
+        <Button
+            android:id="@+id/btnAddDu"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginLeft="8dp"
+            android:background="@mipmap/du_mtr_rdng"/>
+        <View
+            android:layout_width="30dp"
+            android:layout_height="1dp"
+            ></View>
+        <Button
+            android:id="@+id/btnaddDu"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:textColor="#ffffff"
+            android:textAllCaps="false"
+            android:background="@mipmap/submit"
+            />
+    </LinearLayout>
+</RelativeLayout>

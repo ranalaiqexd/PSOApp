@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal"
+        android:weightSum="7"
+        android:id="@+id/ll_out"
+        android:background="#1b8035"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="40dp">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@color/white"
+            android:textSize="13sp"/>
+        <TextView
+            android:id="@+id/tv_description"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:layout_marginLeft="1dp"
+            android:background="@color/white"
+            android:text="Item Description"
+            android:textColor="#1b8035"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tv_hsd"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:gravity="center"
+            android:text="HSD"
+            android:layout_marginLeft="1dp"
+            android:textColor="#1b8035"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tv_pmg"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="1dp"
+            android:gravity="center"
+            android:text="PMG"
+            android:background="@color/white"
+            android:textColor="#1b8035"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tv_hdbc"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_marginLeft="1dp"
+            android:background="@color/white"
+            android:text="HOBC"
+            android:textColor="#1b8035"
+            android:textSize="13sp" />
+    </LinearLayout>
+</RelativeLayout>

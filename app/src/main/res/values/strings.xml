@@ -1,0 +1,132 @@
+<resources>
+    <string name="app_name">Abc Fuel</string>
+
+    <!--Messages -->
+    <string name="connection_not_available">It seems that you are not connected to the Internet. Kindly check your network settings.</string>
+    <string name="GPSsettings">GPS settings</string>
+    <string name="GPSEnable">It seems that your location service is not enabled. Do you want to enable it to enjoy some feature of app?</string>
+    <string name="Settings">Settings</string>
+    <string name="Cancel">Cancel</string>
+    <string name="gpss">GPS coordinates did not match with your current location.</string>
+    <string name="v_gps_enable">App is unable to get your location, Please turn on your GPS.</string>
+    <string name="network_error">There\'s no network connection right now. Please check your wifi connection or mobile data.</string>
+    <string name="server_error">Problem retrieving data from servers due to connectivity issue.</string>
+    <string name="network_error_offline">There\'s no permission in offline mode, Please stable network connection right now or contact to admin for work in offline mode.</string>
+    <string-array name="nav_drawer_labels">
+        <item>Select Product</item>
+        <item>HSD</item>
+        <item>PMG</item>
+        <item>HOBC</item>
+    </string-array>
+
+    <string-array name="gps_not">
+        <item>@string/gpss</item>
+
+    </string-array>
+    <string-array name="fuel_station">
+        <item>Select Station</item>
+
+    </string-array>
+
+    <string-array name="yesorno">
+        <item>Select</item>
+        <item>Yes</item>
+        <item>No</item>
+        <item>N/A</item>
+    </string-array>
+
+
+
+    <string-array name="hse_survey">
+        <item>3kg CO. fire extinguisher with valid expiry is available for electrical room/ Diesel Generator Set.</item>
+        <item>50kg DCP trolley with valid expiry is properly placed in tank area.</item>
+        <item>6kg DCP fire extinguisher with valid expiry is available and properly pressurized.</item>
+        <item>Earthing is properly done to all necessary equipments.</item>
+        <item>All wiring is properly covered and there are no loose or open wires.</item>
+        <item>Gas leakage detection system at CNG section is available and working.</item>
+        <item>The following signs are clearly visible and properly placed at island or canopy columns, No smoking, Switch- Off Engine,  Switch-off mobile.</item>
+        <item>Compressors duly covered with protective guards.</item>
+        <item>Bonding cable is properly intact and working.</item>
+        <item>Sufficient sand buckets are available filled with clean and dry sand.</item>
+        <item>Toilets are clean and properly maintained.</item>
+        <item>The Shop Stop DOES NOT sell any explosive items like lighters, match box.</item>
+        <item>The CNG compressor room is free of any hazardous or unnecessary materials.</item>
+    </string-array>
+
+
+    <string-array name="hse_survey_key">
+        <item>hse_3kg_co_extinguisher</item>
+        <item>hse_50kg_dcp_trolley</item>
+        <item>hse_6kg_dcp_extinguisher</item>
+        <item>hse_earthing</item>
+        <item>hse_all_wiring</item>
+        <item>hse_gas_leakage</item>
+        <item>hse_visible_sign</item>
+        <item>hse_compressors_covered_guards</item>
+        <item>hse_bonding_cable_working</item>
+        <item>sufficent_buckets_available</item>
+        <item>hse_toilets_cleans</item>
+        <item>hse_shop_stop</item>
+        <item>hse_cng_compressor_free</item>
+        <item>hse_comment</item>
+    </string-array>
+
+
+    <string-array name="for_court_survey">
+        <item>Forecourt area is clean in all aspects.</item>
+        <item>All the dispensing units are functioning properly.</item>
+        <item>All signage and lighting are in proper order.</item>
+        <item>Lubricants are available and properly displayed on clean lubricant racks.</item>
+        <item>Meter reading is shown to the customers before and after fuel dispensing.</item>
+        <item>Wind screen cleaning service is provided to the customers at all times.</item>
+        <item>Quick oil change is operative.</item>
+        <item>Only PSO lubricant is sold and changed at the station.</item>
+        <item>All the fuel prices on the dispensing units and price signage on monolith are updated and clearly visible to the customers.</item>
+        <item>Dust bins are available and in proper condition.</item>
+        <item>All the attendants and staff members are in clean and proper uniform.</item>
+        <item>Slogans wall is in presentable condition.</item>
+        <item>Clean drinking water is avaialble at the outlet.</item>
+        <item>Copy of explosive license or valid copy of paid challan is available and displayed in the sales room.</item>
+    </string-array>
+
+    <string-array name="for_court_survey_key">
+        <item>forecourtarea_clearity</item>
+        <item>dispensers_functionality_properly</item>
+        <item>signage_lighting_proper_order</item>
+        <item>lubricants_proper_available</item>
+        <item>meter_reading_custmer</item>
+        <item>wind_screen_cleaning</item>
+        <item>quick_oil_change</item>
+        <item>only_pso_lubricant_sold</item>
+        <item>all_the_fuel_prices_update_visible</item>
+        <item>dustbins_available</item>
+        <item>staff_members_clean_proper</item>
+        <item>solgan_wall_presentable</item>
+        <item>clean_drinking_water_avaialble</item>
+        <item>explosive_license_valid_paid_challan</item>
+        <item>custmer_comment</item>
+    </string-array>
+
+
+    <string-array name="calculation_description">
+        <item>Item Description</item>
+        <item>Previous Physical Stock</item>
+        <item>Purchase between two inspection</item>
+        <item>Available for Sale</item>
+        <item>Nozzle sales</item>
+        <item>Book Stock</item>
+        <item>Current Physical Stock</item>
+        <item>Gain / Loss</item>
+    </string-array>
+
+    <string-array name="calculation_title">
+        <item></item>
+        <item>A</item>
+        <item>B</item>
+        <item>C=A+B</item>
+        <item>D</item>
+        <item>E=C-D</item>
+        <item>F</item>
+        <item>F-E</item>
+    </string-array>
+</resources>

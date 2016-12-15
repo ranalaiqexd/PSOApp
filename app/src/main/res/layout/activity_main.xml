@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1.26"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.26"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/abc_fuel_logo" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="47dp">
+
+
+                <RelativeLayout
+                    android:id="@+id/imRl"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+
+                    android:background="@drawable/btn_background_lgt_grn"
+                    android:layout_marginTop="90dp">
+
+                    <Button
+                        android:id="@+id/button_macAddrss"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="10dp"
+
+                        android:background="@drawable/button_bkgrnd_gren"
+                        android:text="Mac Address Scan"
+                        android:textAllCaps="false"
+                        android:textSize="19sp"
+                        android:layout_marginRight="10dp" />
+
+                </RelativeLayout>
+                <ImageView
+                    android:id="@+id/imgVw"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_centerHorizontal="true"
+
+                    android:layout_marginEnd="79dp"
+                    android:layout_marginRight="79dp"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/internet_real"
+                    android:layout_gravity="center_horizontal" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textSize="17sp"
+                android:textColor="#D80101"
+                android:text="One Time Only" />
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

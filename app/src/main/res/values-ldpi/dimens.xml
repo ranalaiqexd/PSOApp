@@ -1,0 +1,19 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="tool_bar_hieght">35dp</dimen>
+
+    <dimen name="header_txt_size">15sp</dimen>
+    <dimen name="header_btm_txt_size">8sp</dimen>
+
+    <dimen name="admnssn_txt_size">6sp</dimen>
+    <dimen name="pge_electn_txt_size">8sp</dimen>
+    <dimen name="about_txt_size">8sp</dimen>
+    <dimen name="contct_txt_size">8sp</dimen>
+
+    <dimen name="create_nw_accnt">12sp</dimen>
+    <dimen name="login">10sp</dimen>
+    <dimen name="arabic">10sp</dimen>
+</resources>

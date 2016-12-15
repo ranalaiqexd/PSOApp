@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolBar_getRprts"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:minHeight="?attr/actionBarSize"
+        android:gravity="center"
+
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:background="#0D8241"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/haiderTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="@dimen/header_txt_size"
+            android:textColor="#ffffff"
+            android:text="Reports"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/contct_txt_size"
+                android:text="My Inspections Reports"/>
+        </LinearLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_below="@+id/toolBar_getRprts"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:weightSum="2"
+        android:orientation="vertical">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="9dp">?</View>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="0.26"
+
+            android:background="@drawable/layout_backround"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/btn_background_lgt_grn"
+                android:gravity="center"
+                android:textSize="@dimen/create_nw_accnt"
+                android:textColor="#ffffff"
+                android:text="Filters"
+                android:layout_weight="0.4"/>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1.5"
+                android:layout_height="match_parent"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/btnByLctn"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="By Location"
+                    android:textSize="14sp"
+                    android:padding="4dp"
+                    android:background="@drawable/layout_back_ground_darkgrey"
+                    android:textAllCaps="false"
+                    android:layout_weight="0.7"/>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_weight="0.03"
+                    android:layout_height="1dp"></View>
+                <Button
+                    android:id="@+id/btn_byStatn"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="By Station Name"
+                    android:textSize="14sp"
+                    android:padding="4dp"
+                    android:background="@drawable/layout_back_ground_darkgrey"
+                    android:textAllCaps="false"
+                    android:layout_weight="1"/>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_weight="0.03"
+                    android:layout_height="1dp"></View>
+                <Button
+                    android:id="@+id/btnDate"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:textSize="14sp"
+                    android:text="Date"
+                    android:background="@drawable/layout_back_ground_darkgrey"
+                    android:textAllCaps="false"
+                    android:layout_weight="0.6"/>
+            </LinearLayout>
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.03"></View>
+        <ListView
+            android:id="@+id/lstVw_reports"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:paddingBottom="2dp"
+            android:divider="@null"
+            android:scrollbars="none"
+            android:layout_height="0dp"
+            android:layout_weight="1.7"></ListView>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -759,6 +759,7 @@ public class LatestNewInspectionActivity extends AppCompatActivity implements Vi
                         Log.d("Stationcheck", inspectionsModel.getStations().get(stationPosition).getStationName() +"/"+stationPosition);
 
                         // Temporary
+                        //
 //                        Intent intent1 = new Intent(LatestNewInspectionActivity.this, NewDashboard.class);
 //                        startActivity(intent1);
 //                        finish();

@@ -1541,6 +1541,7 @@ public class LatestNewInspectionActivity extends AppCompatActivity implements Vi
 //                            {
 //                                calculateC = inspectionsModel.getStations().get(stationPosition).getProductCalculations().get(productPosition).getC();
 //
+//
 //                            }
 
                             calculateC = valueA + valueB;

@@ -58,6 +58,22 @@
             android:textAllCaps="false"
             android:background="@mipmap/submit"
             />
+
+        <View
+            android:id="@+id/viewRemove"
+            android:layout_width="30dp"
+            android:layout_height="1dp"
+            android:visibility="visible">
+        </View>
+
+        <Button
+            android:id="@+id/btnRemove"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:background="@mipmap/remove"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:visibility="visible" />
     </LinearLayout>
 
 </RelativeLayout>

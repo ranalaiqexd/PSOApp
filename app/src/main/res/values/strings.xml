@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Abc Fuel</string>
+    <string name="app_name">Inspection App</string>
 
     <!--Messages -->
     <string name="connection_not_available">It seems that you are not connected to the Internet. Kindly check your network settings.</string>
@@ -9,9 +9,18 @@
     <string name="Cancel">Cancel</string>
     <string name="gpss">GPS coordinates did not match with your current location.</string>
     <string name="v_gps_enable">App is unable to get your location, Please turn on your GPS.</string>
+    <string name="v_gps_validate">App is unable to get location using GPS, Now you are trying to work with last known location from mobile network.</string>
+    <string name="v_gps_try">App is unable to get device location, please try again.</string>
+
+    <string name="v_gps_old_location">App is unable to get your correct location, Please turn off/on your GPS.</string>
+    <string name="v_gps_error">Device does not support GPS.</string>
     <string name="network_error">There\'s no network connection right now. Please check your wifi connection or mobile data.</string>
     <string name="server_error">Problem retrieving data from servers due to connectivity issue.</string>
     <string name="network_error_offline">There\'s no permission in offline mode, Please stable network connection right now or contact to admin for work in offline mode.</string>
+
+    <!--edited by exd-->
+    <string name="select_station">Select Station</string>
+
     <string-array name="nav_drawer_labels">
         <item>Select Product</item>
         <item>HSD</item>
@@ -25,7 +34,6 @@
     </string-array>
     <string-array name="fuel_station">
         <item>Select Station</item>
-
     </string-array>
 
     <string-array name="yesorno">
@@ -34,7 +42,6 @@
         <item>No</item>
         <item>N/A</item>
     </string-array>
-
 
 
     <string-array name="hse_survey">

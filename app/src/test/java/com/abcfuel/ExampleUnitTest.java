@@ -1,4 +1,4 @@
-package com.inspections.pso;
+package com.newinspections.pso;
 
 import org.junit.Test;
 

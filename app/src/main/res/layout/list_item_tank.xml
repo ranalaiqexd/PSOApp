@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     card_view:cardCornerRadius="2dp">
@@ -35,14 +36,28 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="0.04"></View>
 
+            <TextView
+                android:id="@+id/spinner_text"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="10sp"
+                android:layout_weight="0.5"
+                android:background="@drawable/edt_bck_gnd_green"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="Select Product"
+                android:textColor="#1E629C"
+                android:textSize="16sp"
+                android:visibility="visible" />
+
             <Spinner
                 android:id="@+id/spinner_type"
                 android:layout_width="0dp"
                 android:layout_height="40dp"
-                android:layout_weight="0.5"
                 android:layout_marginRight="10sp"
+                android:layout_weight="0.5"
                 android:background="@drawable/edt_txt_bluebackgrnd"
-                android:entries="@array/nav_drawer_labels"></Spinner>
+                android:visibility="gone"/>
         </LinearLayout>
 
         <View
@@ -81,6 +96,40 @@
 
             </LinearLayout>
 
+        <!--edited by exd-->
+            <LinearLayout
+                android:id="@+id/ll_previous_reading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:weightSum="3"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="visible">
+                <TextView
+                    android:id="@+id/previousReading"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Opening Stock"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="13sp"/>
+
+                <TextView
+                    android:id="@+id/tv_previous_reading"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.8"
+                    android:textColor="@color/colorAccent"
+                    android:gravity="center_vertical"
+                    android:textSize="11sp"
+                    android:hint="0"
+                    android:padding="10dp"
+                    android:background="@drawable/edt_bck_gnd_green"/>
+
+            </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -93,7 +142,7 @@
                     <TextView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:text="Current Reading"
+                        android:text="Current Stock"
                         android:layout_weight="1"
                         android:textSize="13sp" />
 
@@ -152,7 +201,8 @@
                         android:hint="Enter value"
                         android:textSize="11sp"
                         android:padding="10dp"
-                        android:background="@drawable/edt_bck_gnd_green"/>
+                        android:background="@drawable/edt_bck_gnd_green"
+                        android:fontFamily="sans-serif" />
                 </LinearLayout>
 
 

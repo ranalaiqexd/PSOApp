@@ -410,7 +410,6 @@
                 android:padding="0.5dp"
                 android:background="@color/colorPrimary"
                 tools:listitem="@layout/list_item_calculation" />
-
             <TextView
                 android:id="@+id/tv_all_values_tag"
                 android:layout_width="wrap_content"
@@ -419,6 +418,37 @@
                 android:layout_margin="5dp"
                 android:text="All Values in Liters"
                 android:textSize="16sp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center_vertical"
+                android:padding="8dp"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/btn_export"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@mipmap/export_bttn"/>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="0.7"></View>
+                <Button
+                    android:id="@+id/btn_mail"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@mipmap/snd_mail"/>
+
+            </LinearLayout>
+
+
         </LinearLayout>
     </android.support.v4.widget.NestedScrollView>
 
